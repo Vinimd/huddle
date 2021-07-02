@@ -1,0 +1,174 @@
+:root{
+    --color:white
+}
+body{
+    background-image: url(../img/bg-desktop.svg);
+    background-color: #674baf;
+    color: #fff;
+}
+
+header{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3.3rem;
+    margin-bottom: 3.3rem
+}
+.logo__huddle{
+    width: 17%;
+    transition: 500ms;
+}
+.logo__huddle:hover{
+    transform: scale(1.1);
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+main{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+.text__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 3rem;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: normal;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+.register__button{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    color:#674baf;
+    font-size: medium;
+    width: 43%;
+    height: 15%;
+    border: none;
+    border-radius: 50px;
+    transition: 800ms;
+}
+.register__button:hover{
+    color: #fff;
+    background-color: #674baf;
+    border: 1px solid white;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+.icons{
+    display: flex;
+    justify-content: flex-end;
+}
+li{
+    margin-top: 1rem;
+}
+footer nav ul li a{
+    width: 69%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 53%;
+    transition: 2s;
+}
+footer nav ul li a:hover{
+    --color:#674baf;
+    background-color: #fff;
+}
+.change__color{
+    fill:var(--color);
+}
+.facebook{
+    width: 4%;
+}
+.facebook__svg{
+    width: 98%;
+}
+.twitter{
+    width: 4%;
+}
+.instagram {
+    width: 4%;
+}
+.instagram__svg{
+    width: 91%;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:768px) {
+    .logo__huddle{
+        width:50%
+    }
+    .img img{
+        width: 100%;
+    }
+    .text__box{
+        width: 80%;
+    }
+    footer{
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    footer nav ul li{
+        margin-left: 1rem;
+    }
+    .facebook{
+        width: 6%;
+    }
+    .twitter{
+        width: 6%;    
+    }
+    .instagram{
+        width: 6%;
+    }
+    footer nav ul li a{
+        width: 100%;
+    }
+    
+
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:426px) {
+
+    .logo__huddle{
+        width: 100%;
+    }
+   main{
+       flex-direction: column;
+       align-content: center;
+       margin: 0 0;
+   }
+   .img{
+       width:100%
+   }
+   .title{
+       width: 100%;
+   }
+   .text__box{
+       width: 100%;
+   }
+   footer{
+       margin-top: 3rem;
+   }
+   .facebook{
+       width: 13%;
+   }
+   .twitter{
+       width: 13%;    
+   }
+   .instagram{
+       width: 13%;
+   }
+}
